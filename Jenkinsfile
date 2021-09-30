@@ -30,9 +30,9 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        stage ("terraform Destroy") {
+        stage ("terraform destroy") {
             steps {
-                sh 'terraform Destroy --auto-approve'
+                sh 'terraform destroy --auto-approve'
             }
         }
     }
